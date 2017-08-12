@@ -1,9 +1,9 @@
 subscription-manager repos \
-    --enable="rhel-7-server-rpms" \
+        --enable="rhel-7-server-rpms" \
 	--enable="rhel-7-server-extras-rpms" \
 	--enable="rhel-7-server-optional-rpms" \
 	--enable="rhel-7-server-supplementary-rpms" \
-    --enable="rhel-7-server-thirdparty-oracle-java-rpms" \
+        --enable="rhel-7-server-thirdparty-oracle-java-rpms" \
 	--enable="rh-gluster-3-client-for-rhel-7-server-rpms" \
 	--enable="rhel-server-rhscl-7-rpms" \
 	--enable="rhel-server-rhscl-7-eus-rpms" \
