@@ -1,14 +1,14 @@
 #!/bin/bash
 
 # Download mongodb archive for 3.4.x
-for minor_version in {0..6}
+for minor_version in {0..9}
 do
  wget https://downloads.mongodb.com/linux/mongodb-linux-x86_64-enterprise-rhel62-3.4.$minor_version.tgz
  wget https://downloads.mongodb.com/linux/mongodb-linux-x86_64-enterprise-rhel70-3.4.$minor_version.tgz
 done
 
 # Download mongodb archive for 3.2.x
-for minor_version in {0..16}
+for minor_version in {0..17}
 do
  wget https://downloads.mongodb.com/linux/mongodb-linux-x86_64-enterprise-rhel62-3.2.$minor_version.tgz
  wget https://downloads.mongodb.com/linux/mongodb-linux-x86_64-enterprise-rhel70-3.2.$minor_version.tgz
