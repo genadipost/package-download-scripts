@@ -59,6 +59,12 @@ curl -L https://toolbelt.treasuredata.com/sh/install-redhat-td-agent2.sh | sh
 
 curl -s https://packagecloud.io/install/repositories/grafana/stable/script.rpm.sh | sudo bash
 
+echo '[ansible]
+name=Ansible for Enterprise Linux 7 - $basearch
+baseurl=https://releases.ansible.com/ansible/rpm/release/epel-7-x86_64/
+enabled=1
+gpgcheck=0' | tee /etc/yum.repos.d/ansible.repo
+
 cat > /etc/yum.repos.d/mariadb.repo <<END \
 
 # MariaDB 10.1 RedHat repository list - created 2017-05-06 20:48 UTC
