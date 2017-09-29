@@ -59,6 +59,30 @@ curl -L https://toolbelt.treasuredata.com/sh/install-redhat-td-agent2.sh | sh
 
 curl -s https://packagecloud.io/install/repositories/grafana/stable/script.rpm.sh | sudo bash
 
+echo '[mysql57-community]
+name=MySQL 5.7 Community Server
+baseurl=http://repo.mysql.com/yum/mysql-5.7-community/el/7/$basearch/
+enabled=1
+gpgcheck=0
+
+[mysql-cluster-7.5-community]
+name=MySQL Cluster 7.5 Community
+baseurl=http://repo.mysql.com/yum/mysql-cluster-7.5-community/el/7/$basearch/
+enabled=1
+gpgcheck=0
+
+[mysql-connectors-community]
+name=MySQL Connectors community
+baseurl=http://repo.mysql.com/yum/mysql-connectors-community/el/7/$basearch/
+enabled=1
+gpgcheck=0
+
+[mysql-tools-community]
+name=MySQL Tools community
+baseurl=http://repo.mysql.com/yum/mysql-tools-community/el/7/$basearch/
+enabled=1
+gpgcheck=0' | tee /etc/yum.repos.d/mysql-community.repo
+
 echo '[ansible]
 name=Ansible for Enterprise Linux 7 - $basearch
 baseurl=https://releases.ansible.com/ansible/rpm/release/epel-7-x86_64/
