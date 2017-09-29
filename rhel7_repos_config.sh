@@ -60,6 +60,13 @@ curl -L https://toolbelt.treasuredata.com/sh/install-redhat-td-agent2.sh | sh
 
 curl -s https://packagecloud.io/install/repositories/grafana/stable/script.rpm.sh | sudo bash
 
+echo '[s9s-repo]
+name = Severalnines Release Repository
+baseurl = http://repo.severalnines.com/rpm/os/x86_64
+enabled = 1
+gpgkey = http://repo.severalnines.com/severalnines-repos.asc
+gpgcheck = 1' | tee /etc/yum.repos.d/s9s-repo.repo
+
 echo '[mysql57-community]
 name=MySQL 5.7 Community Server
 baseurl=http://repo.mysql.com/yum/mysql-5.7-community/el/7/$basearch/
