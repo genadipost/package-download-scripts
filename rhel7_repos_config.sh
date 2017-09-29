@@ -27,6 +27,7 @@ yum install -y https://centos7.iuscommunity.org/ius-release.rpm
 yum install -y https://download.postgresql.org/pub/repos/yum/9.4/redhat/rhel-7-x86_64/pgdg-redhat94-9.4-3.noarch.rpm
 yum install -y https://download.postgresql.org/pub/repos/yum/9.5/redhat/rhel-7-x86_64/pgdg-redhat95-9.5-3.noarch.rpm
 yum install -y https://download.postgresql.org/pub/repos/yum/9.6/redhat/rhel-7-x86_64/pgdg-redhat96-9.6-3.noarch.rpm
+#yum install -y http://www.pgpool.net/yum/rpms/3.5/redhat/rhel-7-x86_64/pgpool-II-release-3.5-1.noarch.rpm
 #yum install -y http://www.pgpool.net/yum/rpms/3.6/redhat/rhel-7-x86_64/pgpool-II-release-3.6-1.noarch.rpm
 yum install -y https://www.percona.com/redir/downloads/percona-release/redhat/0.1-4/percona-release-0.1-4.noarch.rpm
 yum install -y http://repo.rundeck.org/latest.rpm
@@ -164,13 +165,23 @@ gpgcheck=1
 
 END
 
+cat > /etc/yum.repos.d/pgpool-II-release-35.repo <<END \
+
+[pgpool35]
+name=pgpool-II 3.5
+baseurl=http://www.pgpool.net/yum/rpms/3.5/redhat/rhel-7-x86_64
+enabled=0
+gpgcheck=0
+
+END
+
 cat > /etc/yum.repos.d/pgpool-II-release-36.repo <<END \
 
 [pgpool36]
 name=pgpool-II 3.6
 baseurl=http://www.pgpool.net/yum/rpms/3.6/redhat/rhel-7-x86_64
 enabled=0
-gpgcheck=1
+gpgcheck=0
 
 END
 
