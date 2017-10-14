@@ -1,3 +1,4 @@
+docker search registry.access.redhat.com/rhel7/* --limit 100 | cut -d" " -f 4 | xargs -L 1 docker pull -a
 docker search registry.access.redhat.com/rhscl/* --limit 100 | cut -d" " -f 4 | xargs -L 1 docker pull -a
 docker search registry.access.redhat.com/openshift3/* --limit 100 | cut -d" " -f 4 | xargs -L 1 docker pull -a 
 docker search registry.access.redhat.com/rhgs3/* --limit 100 | cut -d" " -f 4 | xargs -L 1 docker pull -a 
