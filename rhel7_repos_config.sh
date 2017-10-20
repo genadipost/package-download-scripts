@@ -51,6 +51,8 @@ rpm --import https://download.owncloud.org/download/repositories/9.1/RHEL_7/repo
 rpm --import 'https://download.ceph.com/keys/release.asc'
 rpm --import http://yum.opennms.org/OPENNMS-GPG-KEY
 
+curl -s https://packagecloud.io/install/repositories/basho/riak/script.rpm.sh | sudo bash
+
 curl -sS https://packages.gitlab.com/install/repositories/gitlab/gitlab-ce/script.rpm.sh | sudo bash
 
 curl -s https://packagecloud.io/install/repositories/varnishcache/varnish41/script.rpm.sh | sudo bash
