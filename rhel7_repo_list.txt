@@ -41,6 +41,7 @@ percona-release-x86_64
 pmm
 elasticsearch-2.x
 neo4j
+basho_riak
 rundeck-release-bintray
 puppetlabs-pc1
 foreman-1.14
