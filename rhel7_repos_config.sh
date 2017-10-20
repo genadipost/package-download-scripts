@@ -234,6 +234,26 @@ gpgcheck=0
 
 END
 
+cat > /etc/yum.repos.d/foreman-1.16.repo <<END \
+
+[foreman-1.16]
+name=Foreman 1.16
+baseurl=http://yum.theforeman.org/releases/1.16/el7/\$basearch
+enabled=1
+gpgcheck=0
+
+END
+
+cat > /etc/yum.repos.d/foreman-plugins-1.16.repo <<END \
+
+[foreman-plugins-1.16]
+name=Foreman plugins 1.16
+baseurl=http://yum.theforeman.org/plugins/1.16/el7/\$basearch
+enabled=1
+gpgcheck=0
+
+END
+
 cat > /etc/yum.repos.d/sclo.repo <<END \
 
 [sclo-sclo]
