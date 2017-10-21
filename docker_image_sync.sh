@@ -25,6 +25,7 @@ docker pull registry.connect.redhat.com/crunchydata/crunchy-backup
 docker pull registry.connect.redhat.com/crunchydata/crunchy-postgres-gis
 docker pull registry.connect.redhat.com/crunchydata/crunchy-postgres
 docker pull registry.connect.redhat.com/rocketchat/rocketchat
+docker pull registry.connect.redhat.com/sonatype/nexus-repository-manager
 
 # fission images
 docker search docker.io/fission --limit 100 | cut -d" " -f 4 | grep "docker.io/fission//*" | xargs -L 1 docker pull
