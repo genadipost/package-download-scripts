@@ -42,6 +42,9 @@ docker pull docker.io/manageiq/ruby -a
 docker pull docker.io/manageiq/manageiq_org -a
 docker pull docker.io/manageiq/ansible-tower -a
 
+# eclipse che
+docker pull eclipse/che
+
 # fabric8 images
 docker pull fabric8/fabric8-console
 docker pull fabric8/prometheus-kubernetes
