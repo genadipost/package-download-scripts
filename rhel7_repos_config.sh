@@ -468,4 +468,4 @@ echo '[centos-opstools-testing]
 name=CentOS-7 - OpsTools - release
 baseurl=https://buildlogs.centos.org/centos/7/opstools/$basearch/
 enabled=1
-gpgcheck=0' | tee /etc/yum.repos.d/hp.repo
+gpgcheck=0' | tee /etc/yum.repos.d/centos-opstools-testing.repo
