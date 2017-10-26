@@ -25,8 +25,10 @@ ius
 pgdg94
 pgdg95
 pgdg96
+pgdg10
 pgpool35
 pgpool36
+pgpool37
 temboard
 mariadb
 mongodb-enterprise-2.6
