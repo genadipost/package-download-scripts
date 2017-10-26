@@ -91,3 +91,4 @@ hpsut
 hpip-gen8
 hpip-gen9
 hpstk
+quadsdev-QUADS
