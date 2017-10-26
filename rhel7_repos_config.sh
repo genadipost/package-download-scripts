@@ -463,3 +463,9 @@ name=hp scripting tools
 baseurl=https://downloads.linux.hpe.com/repo/stk/rhel/7/x86_64/current/
 enabled=1
 gpgcheck=0' | tee /etc/yum.repos.d/hp.repo
+
+echo '[centos-opstools-testing]
+name=CentOS-7 - OpsTools - release
+baseurl=https://buildlogs.centos.org/centos/7/opstools/$basearch/
+enabled=1
+gpgcheck=0' | tee /etc/yum.repos.d/hp.repo
