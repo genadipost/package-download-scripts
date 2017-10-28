@@ -469,3 +469,12 @@ name=CentOS-7 - OpsTools - release
 baseurl=https://buildlogs.centos.org/centos/7/opstools/$basearch/
 enabled=1
 gpgcheck=0' | tee /etc/yum.repos.d/centos-opstools-testing.repo
+
+echo '[openresty]
+name=Official OpenResty Repository
+baseurl=https://copr-be.cloud.fedoraproject.org/results/openresty/openresty/epel-7-$basearch/
+skip_if_unavailable=True
+gpgcheck=1
+gpgkey=https://copr-be.cloud.fedoraproject.org/results/openresty/openresty/pubkey.gpg
+enabled=1
+enabled_metadata=1' | tee /etc/yum.repos.d/OpenResty.repo
