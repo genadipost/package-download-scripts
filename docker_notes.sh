@@ -1,5 +1,4 @@
 # Dowload images from registry.access.redhat.com
-```bash
 DOWNLOAD_PATH=/mnt/docker_images/
 images_by_name=`curl -s https://registry.access.redhat.com/v1/search?q=* | jq '.results[].name'`
 for image_name in $images_by_name ; do
@@ -27,10 +26,9 @@ for image_name in $images_by_name ; do
   fi
   echo ------
 done
-```
+
 
 # Download images from docker hub by organization
-```bash
 #!/bin/bash
 
 # https://gist.github.com/kizbitz/e59f95f7557b4bbb8bf2
@@ -89,4 +87,3 @@ do
     echo $image_name exists
   fi
 done
-```
