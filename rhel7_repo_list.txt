@@ -93,3 +93,7 @@ hpip-gen9
 hpstk
 quadsdev-QUADS
 centos-opstools-testing
+libnvidia-container
+nvidia-container-runtime
+nvidia-docker
+docker-ce-stable
