@@ -40,6 +40,7 @@ yum install -y https://packages.icinga.com/epel/7/release/noarch/icinga-rpm-rele
 yum install -y https://download.pydio.com/pub/linux/centos/7/pydio-release-1-1.el7.centos.noarch.rpm
 yum install -y http://yum.opennms.org/repofiles/opennms-repo-stable-rhel7.noarch.rpm
 yum install -y https://s3-us-west-2.amazonaws.com/grafana-releases/release/grafana-4.3.1-1.x86_64.rpm
+yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
 
 curl http://download.bareos.org/bareos/release/latest/RHEL_7/bareos.repo -o /etc/yum.repos.d/bareos.repo
 curl http://download.bareos.org/bareos/contrib/RHEL_7/bareos:contrib.repo -o /etc/yum.repos.d/bareos:contrib.repo
