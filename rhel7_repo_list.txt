@@ -14,6 +14,7 @@ rhel-7-server-ose-3.3-rpms
 rhel-7-server-ose-3.4-rpms
 rhel-7-server-ose-3.5-rpms
 rhel-7-server-ose-3.6-rpms
+rhel-7-server-ose-3.7-rpms
 rhel-7-server-rhceph-1.3-tools-rpms
 rhel-atomic-host-rpms
 rhel-7-server-satellite-tools-6.2-rpms
