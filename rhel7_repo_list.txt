@@ -63,7 +63,7 @@ nodesource-8.x
 zabbix
 icinga-stable-release
 sensu
-ce_9.1
+ce_production
 pydio
 ceph
 gluster-3.8
