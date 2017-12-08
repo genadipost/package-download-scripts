@@ -34,6 +34,7 @@ yum install -y https://download.postgresql.org/pub/repos/yum/10/redhat/rhel-7-x8
 yum install -y https://www.percona.com/redir/downloads/percona-release/redhat/0.1-4/percona-release-0.1-4.noarch.rpm
 yum install -y http://repo.rundeck.org/latest.rpm
 yum install -y https://yum.puppetlabs.com/puppetlabs-release-pc1-el-7.noarch.rpm
+yum install -y https://yum.puppetlabs.com/puppet5/puppet5-release-el-7.noarch.rpm
 #yum install -y https://yum.theforeman.org/releases/1.15/el7/x86_64/foreman-release.rpm
 yum install -y http://repo.zabbix.com/zabbix/3.2/rhel/7/x86_64/zabbix-release-3.2-1.el7.noarch.rpm
 yum install -y https://packages.icinga.com/epel/7/release/noarch/icinga-rpm-release-7-1.el7.centos.noarch.rpm
