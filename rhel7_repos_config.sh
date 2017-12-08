@@ -115,44 +115,40 @@ gpgkey=https://yum.mariadb.org/RPM-GPG-KEY-MariaDB
 gpgcheck=1
 END
 
-cat > /etc/yum.repos.d/mongodb-enterprise.repo <<END \
-
-[mongodb-enterprise-2.6]
+echo '[mongodb-enterprise-2.6]
 name=MongoDB Enterprise Repository 2.6
-baseurl=https://repo.mongodb.com/yum/redhat/\$releasever/mongodb-enterprise/2.6/\$basearch/
+baseurl=https://repo.mongodb.com/yum/redhat/$releasever/mongodb-enterprise/2.6/$basearch/
 gpgcheck=1
 enabled=1
 gpgkey=https://www.mongodb.org/static/pgp/server-2.6.asc
 
 [mongodb-enterprise-3.0]
 name=MongoDB Enterprise Repository 3.0
-baseurl=https://repo.mongodb.com/yum/redhat/\$releasever/mongodb-enterprise/3.0/\$basearch/
+baseurl=https://repo.mongodb.com/yum/redhat/$releasever/mongodb-enterprise/3.0/$basearch/
 gpgcheck=1
 enabled=1
 gpgkey=https://www.mongodb.org/static/pgp/server-3.0.asc
 
 [mongodb-enterprise-3.2]
 name=MongoDB Enterprise Repository 3.2
-baseurl=https://repo.mongodb.com/yum/redhat/\$releasever/mongodb-enterprise/3.2/\$basearch/
+baseurl=https://repo.mongodb.com/yum/redhat/$releasever/mongodb-enterprise/3.2/$basearch/
 gpgcheck=1
 enabled=1
 gpgkey=https://www.mongodb.org/static/pgp/server-3.2.asc
 
 [mongodb-enterprise-3.4]
 name=MongoDB Enterprise Repository 3.4
-baseurl=https://repo.mongodb.com/yum/redhat/\$releasever/mongodb-enterprise/3.4/\$basearch/
+baseurl=https://repo.mongodb.com/yum/redhat/$releasever/mongodb-enterprise/3.4/$basearch/
 gpgcheck=1
 enabled=1
 gpgkey=https://www.mongodb.org/static/pgp/server-3.4.asc
 
 [mongodb-enterprise-3.6]
 name=MongoDB Enterprise Repository 3.6
-baseurl=https://repo.mongodb.com/yum/redhat/\$releasever/mongodb-enterprise/3.6/\$basearch/
+baseurl=https://repo.mongodb.com/yum/redhat/$releasever/mongodb-enterprise/3.6/$basearch/
 gpgcheck=1
 enabled=1
-gpgkey=https://www.mongodb.org/static/pgp/server-3.6.asc
-
-END
+gpgkey=https://www.mongodb.org/static/pgp/server-3.6.asc' | tee /etc/yum.repos.d/mongodb-enterprise.repo
 
 cat > /etc/yum.repos.d/pmm.repo <<END \
 
