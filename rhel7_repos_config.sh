@@ -14,6 +14,7 @@ subscription-manager repos \
 	--enable="rhel-7-server-ose-3.4-rpms" \
 	--enable="rhel-7-server-ose-3.5-rpms" \
 	--enable="rhel-7-server-ose-3.6-rpms" \
+	--enable="rhel-7-server-ose-3.7-rpms" \
 	--enable="rhel-7-server-rhceph-1.3-tools-rpms" \
 	--enable="rhel-atomic-host-rpms" \
 	--enable="rhel-7-server-satellite-tools-6.2-rpms" \
