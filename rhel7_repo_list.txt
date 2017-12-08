@@ -36,6 +36,7 @@ mongodb-enterprise-2.6
 mongodb-enterprise-3.0
 mongodb-enterprise-3.2
 mongodb-enterprise-3.4
+mongodb-enterprise-3.6
 mysql57-community
 mysql-cluster-7.5-community
 mysql-connectors-community
