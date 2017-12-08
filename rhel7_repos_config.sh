@@ -50,7 +50,7 @@ rpm --import https://jenkins-ci.org/redhat/jenkins-ci.org.key
 
 rpm --import https://artifacts.elastic.co/GPG-KEY-elasticsearch
 rpm --import neotechnology.gpg.key
-rpm --import https://download.owncloud.org/download/repositories/9.1/RHEL_7/repodata/repomd.xml.key
+rpm --import https://download.owncloud.org/download/repositories/production/RHEL_7/repodata/repomd.xml.key
 rpm --import 'https://download.ceph.com/keys/release.asc'
 rpm --import http://yum.opennms.org/OPENNMS-GPG-KEY
 
@@ -349,13 +349,13 @@ baseurl=https://sensu.global.ssl.fastly.net/yum/$releasever/$basearch/
 gpgcheck=0
 enabled=1' | tee /etc/yum.repos.d/sensu.repo
 
-echo '[ce_9.1]
-name=ownCloud Server Version 9.1 (RHEL_7)
+echo '[ce_production]
+name=ownCloud Server Version production (RHEL_7)
 type=rpm-md
-baseurl=http://download.owncloud.org/download/repositories/9.1/RHEL_7
+baseurl=http://download.owncloud.org/download/repositories/production/RHEL_7
 gpgcheck=1
-gpgkey=http://download.owncloud.org/download/repositories/9.1/RHEL_7/repodata/repomd.xml.key
-enabled=1' | tee /etc/yum.repos.d/ce:9.1.repo
+gpgkey=http://download.owncloud.org/download/repositories/production/RHEL_7/repodata/repomd.xml.key
+enabled=1' | tee /etc/yum.repos.d/ce:stable.repo
 
 echo '[ceph]
 name=Ceph packages for $basearch
