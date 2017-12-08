@@ -145,6 +145,13 @@ gpgcheck=1
 enabled=1
 gpgkey=https://www.mongodb.org/static/pgp/server-3.4.asc
 
+[mongodb-enterprise-3.6]
+name=MongoDB Enterprise Repository 3.6
+baseurl=https://repo.mongodb.com/yum/redhat/\$releasever/mongodb-enterprise/3.6/\$basearch/
+gpgcheck=1
+enabled=1
+gpgkey=https://www.mongodb.org/static/pgp/server-3.6.asc
+
 END
 
 cat > /etc/yum.repos.d/pmm.repo <<END \
