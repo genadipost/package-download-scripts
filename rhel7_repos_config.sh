@@ -104,16 +104,23 @@ baseurl=https://releases.ansible.com/ansible/rpm/release/epel-7-x86_64/
 enabled=1
 gpgcheck=0' | tee /etc/yum.repos.d/ansible.repo
 
-cat > /etc/yum.repos.d/mariadb.repo <<END \
-
-# MariaDB 10.1 RedHat repository list - created 2017-05-06 20:48 UTC
-# http://downloads.mariadb.org/mariadb/repositories/
-[mariadb]
-name = MariaDB
+echo '[mariadb-10.1]
+name = MariaDB 10.1
 baseurl = http://yum.mariadb.org/10.1/rhel7-amd64
 gpgkey=https://yum.mariadb.org/RPM-GPG-KEY-MariaDB
 gpgcheck=1
-END
+
+[mariadb-10.2]
+name = MariaDB 10.2
+baseurl = http://yum.mariadb.org/10.2/rhel7-amd64
+gpgkey=https://yum.mariadb.org/RPM-GPG-KEY-MariaDB
+gpgcheck=1
+
+[mariadb-10.3]
+name = MariaDB 10.3
+baseurl = http://yum.mariadb.org/10.3/rhel7-amd64
+gpgkey=https://yum.mariadb.org/RPM-GPG-KEY-MariaDB
+gpgcheck=1' | tee /etc/yum.repos.d/mariadb.repo
 
 echo '[mongodb-enterprise-2.6]
 name=MongoDB Enterprise Repository 2.6
