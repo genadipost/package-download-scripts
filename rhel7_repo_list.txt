@@ -45,7 +45,8 @@ mysql-connectors-community
 mysql-tools-community
 percona-release-x86_64
 pmm
-elasticsearch-2.x
+elasticsearch-5.x
+elasticsearch-6.x
 neo4j
 basho_riak
 rundeck-release-bintray
