@@ -437,14 +437,12 @@ baseurl=http://nginx.org/packages/rhel/7/$basearch/
 gpgcheck=0
 enabled=1' | tee /etc/yum.repos.d/nginx.repo
 
-cat <<EOF | sudo tee /etc/yum.repos.d/influxdb.repo
-[influxdb]
-name = InfluxDB Repository - RHEL \$releasever
-baseurl = https://repos.influxdata.com/rhel/\$releasever/\$basearch/stable
+echo '[influxdb]
+name = InfluxDB Repository - RHEL $releasever
+baseurl = https://repos.influxdata.com/rhel/$releasever/$basearch/stable
 enabled = 1
 gpgcheck = 1
-gpgkey = https://repos.influxdata.com/influxdb.key
-EOF
+gpgkey = https://repos.influxdata.com/influxdb.key' | tee /etc/yum.repos.d/influxdb.repo
 
 echo '[hpspp]
 name=Service Pack for ProLiant
