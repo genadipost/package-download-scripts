@@ -166,9 +166,7 @@ gpgcheck=0
 
 END
 
-cat > /etc/yum.repos.d/elasticsearch.repo <<END \
-
-[elasticsearch-5.x]
+echo '[elasticsearch-5.x]
 name=Elasticsearch repository for 5.x packages
 baseurl=https://artifacts.elastic.co/packages/5.x/yum
 gpgcheck=1
@@ -177,7 +175,14 @@ enabled=1
 autorefresh=1
 type=rpm-md
 
-END
+echo '[elasticsearch-6.x]
+name=Elasticsearch repository for 6.x packages
+baseurl=https://artifacts.elastic.co/packages/6.x/yum
+gpgcheck=1
+gpgkey=https://artifacts.elastic.co/GPG-KEY-elasticsearch
+enabled=1
+autorefresh=1
+type=rpm-md' | tee /etc/yum.repos.d/elasticsearch.repo
 
 cat > /etc/yum.repos.d/neo4j.repo <<END \
 
