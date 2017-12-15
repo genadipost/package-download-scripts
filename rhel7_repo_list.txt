@@ -31,7 +31,9 @@ pgpool35
 pgpool36
 pgpool37
 temboard
-mariadb
+mariadb-10.1
+mariadb-10.2
+mariadb-10.3
 mongodb-enterprise-2.6
 mongodb-enterprise-3.0
 mongodb-enterprise-3.2
