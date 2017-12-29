@@ -81,6 +81,7 @@ gluster-3.11
 gluster-3.12
 gitlab_gitlab-ce
 bareos_bareos-16.2
+bareos_bareos-17.2
 bareos_contrib
 jenkins
 varnishcache_varnish41
