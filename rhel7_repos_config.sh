@@ -7,6 +7,10 @@ subscription-manager repos \
 	--enable="rh-gluster-3-client-for-rhel-7-server-rpms" \
 	--enable="rhel-server-rhscl-7-rpms" \
 	--enable="rhel-server-rhscl-7-eus-rpms" \
+	--enable="rhel-7-server-rhn-tools-rpms" \
+	--enable="rhel-7-server-rh-common-rpms" \
+	--enable="rhel-7-server-fastrack-rpms" \
+	--enable="rhel-7-fast-datapath-htb-rpms" \
 	--enable="rhel-7-server-dotnet-rpms" \
 	--enable="rhel-7-server-ose-3.1-rpms" \
 	--enable="rhel-7-server-ose-3.2-rpms" \
@@ -16,12 +20,16 @@ subscription-manager repos \
 	--enable="rhel-7-server-ose-3.6-rpms" \
 	--enable="rhel-7-server-ose-3.7-rpms" \
 	--enable="rhel-7-server-rhceph-1.3-tools-rpms" \
+	--enable="rhel-7-server-rhceph-2-tools-rpms" \
 	--enable="rhel-atomic-host-rpms" \
 	--enable="rhel-7-server-satellite-tools-6.2-rpms" \
+	--enable="rhel-7-server-satellite-maintenance-6-rpms" \
 	--enable="jws-3-for-rhel-7-server-rpms" \
-	--enable="rhel-7-fast-datapath-htb-rpms" \
-	--enable="rh-sso-7.1-for-rhel-7-server-rpms"
-	
+	--enable="jb-ews-2-for-rhel-7-server-rpms" \
+	--enable="jws-textonly-1-for-middleware-rpms" \
+	--enable="rh-sso-7.1-for-rhel-7-server-rpms" \
+	--enable="rh-sso-textonly-1-for-middleware-rpms" \
+	--enable="rhel-7-server-insights-3-rpms"
 	
 yum install -y https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
 yum install -y https://centos7.iuscommunity.org/ius-release.rpm
