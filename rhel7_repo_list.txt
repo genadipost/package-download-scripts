@@ -21,6 +21,7 @@ rhel-7-server-satellite-tools-6.2-rpms
 jws-3-for-rhel-7-server-rpms
 rhel-7-fast-datapath-htb-rpms
 rh-sso-7.1-for-rhel-7-server-rpms
+openresty
 epel
 ius
 pgdg94
