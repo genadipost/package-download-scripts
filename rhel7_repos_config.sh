@@ -531,4 +531,26 @@ gpgkey=https://nvidia.github.io/nvidia-docker/gpgkey
 sslverify=1
 sslcacert=/etc/pki/tls/certs/ca-bundle.crt' | tee /etc/yum.repos.d/nvidia-docker.repo
 
+echo '[bareos_bareos-16.2]
+name=bareos bareos-16.2 (CentOS_7)
+type=rpm-md
+baseurl=http://download.bareos.org/bareos/release/16.2/CentOS_7/
+gpgcheck=1
+gpgkey=http://download.bareos.org/bareos/release/16.2/CentOS_7/repodata/repomd.xml.key
+enabled=1
 
+[bareos_bareos-17.2]
+name=bareos bareos-17.2 (CentOS_7)
+type=rpm-md
+baseurl=http://download.bareos.org/bareos/release/17.2/CentOS_7/
+gpgcheck=1
+gpgkey=http://download.bareos.org/bareos/release/17.2/CentOS_7//repodata/repomd.xml.key
+enabled=1' | tee /etc/yum.repos.d/bareos.repo
+
+echo '[bareos_contrib]
+name=Bareos project contributions (RHEL_7)
+type=rpm-md
+baseurl=http://download.bareos.org/bareos/contrib/RHEL_7/
+gpgcheck=1
+gpgkey=http://download.bareos.org/bareos/contrib/RHEL_7//repodata/repomd.xml.key
+enabled=1' | tee /etc/yum.repos.d/bareos:contrib.repo
