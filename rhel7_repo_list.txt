@@ -45,6 +45,7 @@ mysql-connectors-community
 mysql-tools-community
 percona-release-x86_64
 pmm
+s9s-repo
 elasticsearch-5.x
 elasticsearch-6.x
 neo4j
