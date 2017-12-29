@@ -53,6 +53,7 @@ neo4j
 basho_riak
 rundeck-release-bintray
 puppetlabs-pc1
+puppet5
 foreman-1.14
 foreman-plugins-1.14
 foreman-1.15
