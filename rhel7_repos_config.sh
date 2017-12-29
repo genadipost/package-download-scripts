@@ -501,8 +501,7 @@ gpgkey=https://copr-be.cloud.fedoraproject.org/results/openresty/openresty/pubke
 enabled=1
 enabled_metadata=1' | tee /etc/yum.repos.d/OpenResty.repo
 
-tee /etc/yum.repos.d/nvidia-docker.repo <<EOF
-[libnvidia-container]
+echo '[libnvidia-container]
 name=libnvidia-container
 baseurl=https://nvidia.github.io/libnvidia-container/centos7/x86_64
 repo_gpgcheck=1
@@ -530,7 +529,6 @@ gpgcheck=0
 enabled=1
 gpgkey=https://nvidia.github.io/nvidia-docker/gpgkey
 sslverify=1
-sslcacert=/etc/pki/tls/certs/ca-bundle.crt
-EOF
+sslcacert=/etc/pki/tls/certs/ca-bundle.crt' | tee /etc/yum.repos.d/nvidia-docker.repo
 
 
