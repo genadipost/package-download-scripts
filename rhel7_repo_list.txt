@@ -1,4 +1,4 @@
-rhel-7-server-rpm
+rhel-7-server-rpms
 rhel-7-server-extras-rpms
 rhel-7-server-optional-rpms
 rhel-7-server-supplementary-rpms
