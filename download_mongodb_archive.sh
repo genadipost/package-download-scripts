@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Download mongodb archive for 3.6.x
-for minor_version in {0..0}
+for minor_version in {0..1}
 do
  wget https://downloads.mongodb.com/linux/mongodb-linux-x86_64-enterprise-rhel62-3.6.$minor_version.tgz
  wget https://downloads.mongodb.com/linux/mongodb-linux-x86_64-enterprise-rhel70-3.6.$minor_version.tgz
