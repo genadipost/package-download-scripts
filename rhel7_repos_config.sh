@@ -29,7 +29,8 @@ subscription-manager repos \
 	--enable="jws-textonly-1-for-middleware-rpms" \
 	--enable="rh-sso-7.1-for-rhel-7-server-rpms" \
 	--enable="rh-sso-textonly-1-for-middleware-rpms" \
-	--enable="rhel-7-server-insights-3-rpms"
+	--enable="rhel-7-server-insights-3-rpms" \
+	--enable="rhel-7-server-openstack-11-tools-rpms"
 	
 yum install -y https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
 yum install -y https://centos7.iuscommunity.org/ius-release.rpm
