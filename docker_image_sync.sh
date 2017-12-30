@@ -32,15 +32,18 @@ docker pull registry.connect.redhat.com/influxdata/telegraf-1x
 docker search docker.io/fission --limit 100 | cut -d" " -f 4 | grep "docker.io/fission//*" | xargs -L 1 docker pull
 
 # manageiq images
-docker pull docker.io/manageiq/manageiq -a
-docker pull docker.io/manageiq/httpd -a
-docker pull docker.io/manageiq/manageiq-pods -a
-docker pull docker.io/manageiq/postgresql -a
-docker pull docker.io/manageiq/embedded-ansible -a
-docker pull docker.io/manageiq/memcached -a
-docker pull docker.io/manageiq/ruby -a
-docker pull docker.io/manageiq/manageiq_org -a
-docker pull docker.io/manageiq/ansible-tower -a
+docker pull docker.io/manageiq/manageiq
+docker pull docker.io/manageiq/httpd
+docker pull docker.io/manageiq/manageiq-pods
+docker pull docker.io/manageiq/manageiq-pods:backend-latest
+docker pull docker.io/manageiq/manageiq-pods:frontend-latest
+docker pull docker.io/manageiq/postgresql
+docker pull docker.io/manageiq/embedded-ansible
+docker pull docker.io/manageiq/memcached
+docker pull docker.io/manageiq/ruby
+docker pull docker.io/manageiq/manageiq_org
+docker pull docker.io/manageiq/ansible-tower
+docker pull docker pull manageiq/httpd_configmap_generator
 
 # eclipse che
 docker pull eclipse/che
