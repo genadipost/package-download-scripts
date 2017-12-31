@@ -43,7 +43,7 @@ docker pull docker.io/manageiq/memcached
 docker pull docker.io/manageiq/ruby
 docker pull docker.io/manageiq/manageiq_org
 docker pull docker.io/manageiq/ansible-tower
-docker pull docker pull manageiq/httpd_configmap_generator
+docker pull manageiq/httpd_configmap_generator
 
 # eclipse che
 docker pull eclipse/che
