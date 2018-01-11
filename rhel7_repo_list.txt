@@ -103,6 +103,7 @@ treasuredata
 opennms-repo-stable-common
 influxdb
 grafana_stable
+prometheus-rpm_release
 ansible
 hpspp
 hpsum
