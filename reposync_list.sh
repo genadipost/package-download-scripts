@@ -1,6 +1,6 @@
 #!/bin/bash
 # usage:
-# ./reposync_with_list.sh /path/to/repo/list.txt /path/to/repo/directory
+# ./reposync_list.sh /path/to/repo/list.txt /path/to/repo/directory
 
 FILENAME=$1
 DIRECTORY=$2
