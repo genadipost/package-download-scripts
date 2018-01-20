@@ -69,7 +69,7 @@ yum install -y https://www.percona.com/redir/downloads/percona-release/redhat/0.
 yum install -y http://repo.rundeck.org/latest.rpm
 yum install -y https://yum.puppetlabs.com/puppetlabs-release-pc1-el-6.noarch.rpm
 yum install -y https://yum.puppetlabs.com/puppet5/puppet5-release-el-6.noarch.rpm
-yum install -y http://repo.zabbix.com/zabbix/3.5/rhel/6/x86_64/zabbix-release-3.5-1.el6.noarch.rpm
+yum install -y http://repo.zabbix.com/zabbix/3.4/rhel/6/x86_64/zabbix-release-3.4-1.el6.noarch.rpm
 yum install -y https://packages.icinga.com/epel/icinga-rpm-release-6-latest.noarch.rpm
 yum install -y https://www.softwarecollections.org/en/scls/remi/php56more/epel-6-x86_64/download/remi-php56more-epel-6-x86_64.noarch.rpm
 yum install -y https://download.pydio.com/pub/linux/centos/6/pydio-release-1-1.el6.noarch.rpm
