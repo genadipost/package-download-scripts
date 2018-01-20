@@ -78,9 +78,7 @@ yum install -y http://yum.opennms.org/repofiles/opennms-repo-stable-rhel6.noarch
 curl http://download.bareos.org/bareos/release/latest/RHEL_6/bareos.repo -o /etc/yum.repos.d/bareos.repo
 curl http://download.bareos.org/bareos/contrib/RHEL_6/bareos:contrib.repo -o /etc/yum.repos.d/bareos:contrib.repo
 
-
 curl -L https://toolbelt.treasuredata.com/sh/install-redhat-td-agent2.sh | sh
-
 
 echo '[ansible]
 name=Ansible for Enterprise Linux 6 - $basearch
@@ -130,31 +128,34 @@ baseurl = http://yum.mariadb.org/10.3/rhel6-amd64
 gpgkey=https://yum.mariadb.org/RPM-GPG-KEY-MariaDB
 gpgcheck=1' | tee /etc/yum.repos.d/mariadb.repo
 
-
 echo '[mongodb-enterprise-2.6]
 name=MongoDB Enterprise Repository 2.6
 baseurl=https://repo.mongodb.com/yum/redhat/$releasever/mongodb-enterprise/2.6/$basearch/
 gpgcheck=1
 enabled=1
 gpgkey=https://www.mongodb.org/static/pgp/server-2.6.asc
+
 [mongodb-enterprise-3.0]
 name=MongoDB Enterprise Repository 3.0
 baseurl=https://repo.mongodb.com/yum/redhat/$releasever/mongodb-enterprise/3.0/$basearch/
 gpgcheck=1
 enabled=1
 gpgkey=https://www.mongodb.org/static/pgp/server-3.0.asc
+
 [mongodb-enterprise-3.2]
 name=MongoDB Enterprise Repository 3.2
 baseurl=https://repo.mongodb.com/yum/redhat/$releasever/mongodb-enterprise/3.2/$basearch/
 gpgcheck=1
 enabled=1
 gpgkey=https://www.mongodb.org/static/pgp/server-3.2.asc
+
 [mongodb-enterprise-3.4]
 name=MongoDB Enterprise Repository 3.4
 baseurl=https://repo.mongodb.com/yum/redhat/$releasever/mongodb-enterprise/3.4/$basearch/
 gpgcheck=1
 enabled=1
 gpgkey=https://www.mongodb.org/static/pgp/server-3.4.asc
+
 [mongodb-enterprise-3.6]
 name=MongoDB Enterprise Repository 3.6
 baseurl=https://repo.mongodb.com/yum/redhat/$releasever/mongodb-enterprise/3.6/$basearch/
