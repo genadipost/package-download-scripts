@@ -112,6 +112,7 @@ hpsut
 hpip-gen8
 hpip-gen9
 hpstk
+home_seveas_python
 quadsdev-QUADS
 centos-opstools-testing
 libnvidia-container
