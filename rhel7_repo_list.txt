@@ -72,6 +72,10 @@ foreman-1.16
 foreman-plugins-1.16
 sclo-sclo
 sclo-rh
+katello
+katello-pulp
+katello-candlepin
+katello-client
 nodesource-0.10
 nodesource-4.x
 nodesource-5.x
