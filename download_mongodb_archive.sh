@@ -8,7 +8,7 @@ do
 done
 
 # Download mongodb enterprise archive for 3.4.x
-for minor_version in {0..12}
+for minor_version in {0..13}
 do
  wget https://downloads.mongodb.com/linux/mongodb-linux-x86_64-enterprise-rhel62-3.4.$minor_version.tgz
  wget https://downloads.mongodb.com/linux/mongodb-linux-x86_64-enterprise-rhel70-3.4.$minor_version.tgz
