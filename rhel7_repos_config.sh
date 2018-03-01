@@ -423,7 +423,19 @@ gpgcheck=0'
 name=gluster-3.12
 baseurl=https://buildlogs.centos.org/centos/7/storage/x86_64/gluster-3.12/
 enabled=1
-gpgcheck=0'| tee /etc/yum.repos.d/gluster.repo
+gpgcheck=0
+
+[gluster-3.13]
+name=gluster-3.13
+baseurl=https://buildlogs.centos.org/centos/7/storage/x86_64/gluster-3.13/
+enabled=1
+gpgcheck=0
+
+[gluster-4.0]
+name=gluster-4.0
+baseurl=https://buildlogs.centos.org/centos/7/storage/x86_64/gluster-4.0/
+enabled=1
+gpgcheck=0' | tee /etc/yum.repos.d/gluster.repo
 
 echo '[temboard]
 name=temBoard Packages for Enterprise Linux 7
