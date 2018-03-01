@@ -125,3 +125,7 @@ libnvidia-container
 nvidia-container-runtime
 nvidia-docker
 docker-ce-stable
+packages-microsoft-com-prod
+packages-microsoft-com-mssql-server-2017-gdr
+packages-microsoft-com-mssql-server-2017
+packages-microsoft-com-mssql-server-preview
