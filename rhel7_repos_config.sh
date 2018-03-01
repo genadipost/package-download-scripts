@@ -390,7 +390,7 @@ enabled=1' | tee /etc/yum.repos.d/ce:stable.repo
 
 echo '[ceph]
 name=Ceph packages for $basearch
-baseurl=https://download.ceph.com/rpm-jewel/{distro}/$basearch
+baseurl=https://download.ceph.com/rpm-luminous/{distro}/$basearch
 enabled=1
 gpgcheck=1
 gpgkey=https://download.ceph.com/keys/release.asc' | tee /etc/yum.repos.d/ceph.repo
