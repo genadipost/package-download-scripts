@@ -75,6 +75,12 @@ curl -s https://packagecloud.io/install/repositories/prometheus-rpm/release/scri
 
 yum -y localinstall https://fedorapeople.org/groups/katello/releases/yum/3.5/katello/el7/x86_64/katello-repos-latest.rpm
 
+yum -y install https://packages.microsoft.com/config/rhel/7/packages-microsoft-prod.rpm
+
+curl -o /etc/yum.repos.d/mssql-server-2017-gdr.repo https://packages.microsoft.com/config/rhel/7/mssql-server-2017-gdr.repo
+curl -o /etc/yum.repos.d/mssql-server-2017.repo https://packages.microsoft.com/config/rhel/7/mssql-server-2017.repo
+curl -o /etc/yum.repos.d/mssql-server-preview.repo https://packages.microsoft.com/config/rhel/7/mssql-server-preview.repo
+
 echo '[s9s-repo]
 name = Severalnines Release Repository
 baseurl = http://repo.severalnines.com/rpm/os/x86_64
