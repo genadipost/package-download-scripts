@@ -417,7 +417,7 @@ gpgcheck=0
 name=gluster-3.11
 baseurl=https://buildlogs.centos.org/centos/7/storage/x86_64/gluster-3.11/
 enabled=1
-gpgcheck=0'
+gpgcheck=0
 
 [gluster-3.12]
 name=gluster-3.12
