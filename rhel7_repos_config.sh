@@ -1,36 +1,176 @@
 subscription-manager repos \
-        --enable="rhel-7-server-rpms" \
-	--enable="rhel-7-server-extras-rpms" \
-	--enable="rhel-7-server-optional-rpms" \
-	--enable="rhel-7-server-supplementary-rpms" \
-        --enable="rhel-7-server-thirdparty-oracle-java-rpms" \
-	--enable="rh-gluster-3-client-for-rhel-7-server-rpms" \
-	--enable="rhel-server-rhscl-7-rpms" \
-	--enable="rhel-server-rhscl-7-eus-rpms" \
-	--enable="rhel-7-server-rhn-tools-rpms" \
-	--enable="rhel-7-server-rh-common-rpms" \
-	--enable="rhel-7-server-fastrack-rpms" \
-	--enable="rhel-7-fast-datapath-htb-rpms" \
-	--enable="rhel-7-server-dotnet-rpms" \
-	--enable="rhel-7-server-ose-3.1-rpms" \
-	--enable="rhel-7-server-ose-3.2-rpms" \
-	--enable="rhel-7-server-ose-3.3-rpms" \
-	--enable="rhel-7-server-ose-3.4-rpms" \
-	--enable="rhel-7-server-ose-3.5-rpms" \
-	--enable="rhel-7-server-ose-3.6-rpms" \
-	--enable="rhel-7-server-ose-3.7-rpms" \
-	--enable="rhel-7-server-rhceph-1.3-tools-rpms" \
-	--enable="rhel-7-server-rhceph-2-tools-rpms" \
-	--enable="rhel-atomic-host-rpms" \
-	--enable="rhel-7-server-satellite-tools-6.2-rpms" \
-	--enable="rhel-7-server-satellite-maintenance-6-rpms" \
-	--enable="jws-3-for-rhel-7-server-rpms" \
-	--enable="jb-ews-2-for-rhel-7-server-rpms" \
-	--enable="jws-textonly-1-for-middleware-rpms" \
-	--enable="rh-sso-7.1-for-rhel-7-server-rpms" \
-	--enable="rh-sso-textonly-1-for-middleware-rpms" \
-	--enable="rhel-7-server-insights-3-rpms" \
-	--enable="rhel-7-server-openstack-11-tools-rpms"
+    --enable=rhel-7-server-satellite-tools-6.3-rpms \
+    --enable=rhel-7-server-ansible-2-rpms \
+    --enable=rhel-7-server-rhceph-2-tools-rpms \
+    --enable=rhel-atomic-7-cdk-3.1-rpms \
+    --enable=rhel-7-server-satellite-tools-6.3-puppet4-rpms \
+    --enable=cf-me-5.8-for-rhel-7-rpms \
+    --enable=rhel-7-server-openstack-12-devtools-rpms \
+    --enable=rh-gluster-3-web-admin-server-for-rhel-7-server-rpms \
+    --enable=jb-eap-6.4-for-rhel-7-server-rpms \
+    --enable=rhel-7-server-satellite-capsule-6.2-rpms \
+    --enable=rhel-7-server-eus-restricted-maintenance-oracle-java-rpms \
+    --enable=rhel-7-server-eus-satellite-tools-6.2-rpms \
+    --enable=rhel-7-server-rhn-tools-rpms \
+    --enable=rhel-rs-for-rhel-7-server-fastrack-rpms \
+    --enable=rhel-atomic-7-cdk-3.0-rpms \
+    --enable=rhel-7-server-ose-3.3-rpms \
+    --enable=rhel-7-server-satellite-capsule-6.1-rpms \
+    --enable=rhel-7-server-rhceph-3-mon-rpms \
+    --enable=rh-gluster-3-for-rhel-7-server-rpms \
+    --enable=rhel-7-server-openstack-9-director-rpms \
+    --enable=rhel-atomic-7-cdk-2.4-rpms \
+    --enable=rhel-x86_64-server-7-mrg-messaging-2-rpms \
+    --enable=rhel-7-server-satellite-capsule-optional-6.0-rpms \
+    --enable=rhel-7-server-ose-3.9-rpms \
+    --enable=rhel-7-server-insights-3-rpms \
+    --enable=rhel-7-server-satellite-maintenance-6-rpms \
+    --enable=rhel-7-server-eus-satellite-tools-6.1-rpms \
+    --enable=rhel-7-server-rh-common-rpms \
+    --enable=rhel-7-server-satellite-tools-6.1-rpms \
+    --enable=rhel-7-server-openstack-11-devtools-rpms \
+    --enable=rhel-7-server-eus-thirdparty-oracle-java-rpms \
+    --enable=rhel-7-server-e4s-satellite-tools-6.1-rpms \
+    --enable=rhel-7-server-openstack-9-rpms \
+    --enable=jb-eap-7.0-for-rhel-7-server-rpms \
+    --enable=rhel-7-server-rhceph-3-tools-rpms \
+    --enable=rhel-ha-for-rhel-7-server-e4s-rpms \
+    --enable=jb-coreservices-textonly-1-for-middleware-rpms \
+    --enable=rhel-7-server-rhceph-1.2-mon-rpms \
+    --enable=jb-eap-7.1-for-rhel-7-server-rpms \
+    --enable=rhel-7-server-rhceph-1.2-osd-rpms \
+    --enable=rhel-7-server-openstack-7.0-rpms \
+    --enable=rhel-7-server-e4s-satellite-tools-6.3-puppet4-rpms \
+    --enable=rhel-7-server-openstack-12-rpms \
+    --enable=rh-sso-textonly-1-for-middleware-rpms \
+    --enable=rhel-7-server-rhv-4-power-rpms \
+    --enable=rhel-sap-hana-for-rhel-7-server-rpms \
+    --enable=rhel-7-server-ansible-2.5-rpms \
+    --enable=rhel-ha-for-rhel-7-server-eus-rpms \
+    --enable=rhel-7-server-rhceph-1.3-tools-rpms \
+    --enable=rhel-7-server-openstack-8-director-rpms \
+    --enable=rhel-7-server-openstack-10-tools-rpms \
+    --enable=rhel-7-server-satellite-capsule-6.3-rpms \
+    --enable=rhel-7-server-openstack-10-devtools-rpms \
+    --enable=rhel-7-server-openstack-6.0-rpms \
+    --enable=rhel-7-server-thirdparty-oracle-java-rpms \
+    --enable=rhel-7-server-openstack-11-tools-rpms \
+    --enable=rhel-7-server-dotnet-rpms \
+    --enable=rhel-7-server-rhceph-1.2-calamari-rpms \
+    --enable=rhel-7-server-optional-fastrack-rpms \
+    --enable=rhel-7-server-rhevh-rpms \
+    --enable=rhel-sap-hana-for-rhel-7-server-eus-rpms \
+    --enable=rhel-7-server-rhscon-2-agent-rpms \
+    --enable=rhel-7-server-openstack-7.0-tools-rpms \
+    --enable=rhel-7-server-rhv-4-tools-rpms \
+    --enable=cf-me-5.9-for-rhel-7-rpms \
+    --enable=rhel-7-server-supplementary-rpms \
+    --enable=rhel-7-server-ansible-2.4-rpms \
+    --enable=rhel-7-server-openstack-7.0-optools-rpms \
+    --enable=rhel-7-fast-datapath-htb-rpms \
+    --enable=rhel-7-server-eus-rhn-tools-rpms \
+    --enable=rh-sso-7.2-for-rhel-7-server-rpms \
+    --enable=rhel-7-server-satellite-6.3-puppet4-rpms \
+    --enable=rhel-7-server-rhceph-1.3-installer-rpms \
+    --enable=rhel-7-server-rhv-4.1-rpms \
+    --enable=rhel-7-fast-datapath-rpms \
+    --enable=rhel-7-server-eus-satellite-tools-6.3-rpms \
+    --enable=rhel-7-server-eus-supplementary-rpms \
+    --enable=rhel-7-server-openstack-8-tools-rpms \
+    --enable=rhel-7-server-rhv-4-mgmt-agent-rpms \
+    --enable=rhel-7-server-openstack-7.0-director-rpms \
+    --enable=rh-gluster-3-nfs-for-rhel-7-server-rpms \
+    --enable=rhel-7-server-openstack-9-optools-rpms \
+    --enable=rhel-7-server-rhvh-4-build-rpms \
+    --enable=rhel-server-rhscl-7-rpms \
+    --enable=jb-ews-2-for-rhel-7-server-rpms \
+    --enable=rhel-7-server-satellite-tools-6.2-rpms \
+    --enable=rhel-7-server-eus-rh-common-rpms \
+    --enable=rhel-ha-for-rhel-7-server-fastrack-rpms \
+    --enable=rhel-7-server-extras-rpms \
+    --enable=rhel-sap-for-rhel-7-server-e4s-rpms \
+    --enable=rhel-7-server-rhceph-3-osd-rpms \
+    --enable=rhel-7-server-openstack-12-tools-rpms \
+    --enable=cf-me-5.7-for-rhel-7-rpms \
+    --enable=rhel-atomic-7-cdk-3.2-rpms \
+    --enable=jws-3-for-rhel-7-server-rpms \
+    --enable=cf-me-5.5-for-rhel-7-rpms \
+    --enable=rhel-7-server-eus-rpms \
+    --enable=rhel-sap-for-rhel-7-server-rpms \
+    --enable=jb-eap-6-for-rhel-7-server-rpms \
+    --enable=rhel-7-server-satellite-capsule-6.0-rpms \
+    --enable=rhel-7-server-fastrack-rpms \
+    --enable=rhel-7-server-rhceph-1.2-installer-rpms \
+    --enable=rhel-atomic-host-rpms \
+    --enable=rhel-7-server-ose-3.2-rpms \
+    --enable=rhel-7-server-openstack-11-rpms \
+    --enable=cf-me-5.6-for-rhel-7-rpms \
+    --enable=rhel-7-server-rhev-mgmt-agent-rpms \
+    --enable=rhel-7-server-v2vwin-1-rpms \
+    --enable=rhel-7-server-ose-3.1-rpms \
+    --enable=rhel-7-server-eus-optional-rpms \
+    --enable=rhel-7-server-rhceph-2-mon-rpms \
+    --enable=rhel-7-server-satellite-6.0-rpms \
+    --enable=rhel-7-server-e4s-optional-rpms \
+    --enable=jws-textonly-1-for-middleware-rpms \
+    --enable=jb-eap-6.3-for-rhel-7-server-rpms \
+    --enable=rhel-7-server-satellite-optional-6.0-rpms \
+    --enable=rhel-atomic-7-cdk-2.2-rpms \
+    --enable=rhel-7-server-rhscon-2-main-rpms \
+    --enable=rhel-7-server-ose-3.8-rpms \
+    --enable=rhel-atomic-7-cdk-3.3-rpms \
+    --enable=rhel-7-server-openstack-10-rpms \
+    --enable=rhel-7-server-rpms \
+    --enable=rh-gluster-3-big-data-for-rhel-7-server-rpms \
+    --enable=rh-sso-7.1-for-rhel-7-server-rpms \
+    --enable=rhel-server-rhscl-7-eus-rpms \
+    --enable=rhel-7-server-devtools-rpms \
+    --enable=rhel-7-server-openstack-11-optools-rpms \
+    --enable=rhel-7-server-rt-rpms \
+    --enable=rhel-7-server-satellite-6.2-rpms \
+    --enable=rhel-7-server-optional-rpms \
+    --enable=rhel-7-server-restricted-maintenance-oracle-java-rpms \
+    --enable=rhel-7-server-openstack-8-rpms \
+    --enable=rh-gluster-3-splunk-for-rhel-7-server-rpms \
+    --enable=rhel-sap-hana-for-rhel-7-server-e4s-rpms \
+    --enable=rhel-atomic-7-cdk-2.3-rpms \
+    --enable=rhel-rs-for-rhel-7-server-eus-rpms \
+    --enable=rhel-7-server-ose-3.0-rpms \
+    --enable=rhel-7-server-rhceph-1.3-mon-rpms \
+    --enable=rh-gluster-3-for-rhel-7-server-files \
+    --enable=rhel-7-server-e4s-satellite-tools-6.3-rpms \
+    --enable=rhel-7-server-ose-3.4-rpms \
+    --enable=rhel-7-server-openstack-9-tools-rpms \
+    --enable=rh-gluster-3-nagios-for-rhel-7-server-rpms \
+    --enable=rhel-7-server-eus-satellite-tools-6.3-puppet4-rpms \
+    --enable=rhel-7-server-rhv-4.0-rpms \
+    --enable=rh-gluster-3-samba-for-rhel-7-server-rpms \
+    --enable=rhel-7-server-ose-3.7-rpms \
+    --enable=rhel-7-server-openstack-10-optools-rpms \
+    --enable=rhel-7-server-openstack-5.0-rpms \
+    --enable=rhel-7-server-e4s-rpms \
+    --enable=rhel-7-server-satellite-6.1-rpms \
+    --enable=rhel-rs-for-rhel-7-server-rpms \
+    --enable=rhel-7-server-satellite-6.3-rpms \
+    --enable=jb-coreservices-1-for-rhel-7-server-rpms \
+    --enable=rhel-7-server-rhceph-2-osd-rpms \
+    --enable=rhel-7-server-e4s-satellite-tools-6.2-rpms \
+    --enable=jb-eap-7-for-rhel-7-server-rpms \
+    --enable=rh-gluster-3-web-admin-agent-for-rhel-7-server-rpms \
+    --enable=rhel-7-server-ose-3.5-rpms \
+    --enable=rhel-7-server-ose-3.6-rpms \
+    --enable=jb-eap-textonly-1-for-middleware-rpms \
+    --enable=rhel-7-server-rhceph-1.3-calamari-rpms \
+    --enable=rhel-ha-for-rhel-7-server-rpms \
+    --enable=rh-gluster-3-client-for-rhel-7-server-rpms \
+    --enable=rhel-7-server-rhceph-1.3-osd-rpms \
+    --enable=rhel-7-server-openstack-8-optools-rpms \
+    --enable=rhel-7-server-satellite-capsule-6.3-puppet4-rpms \
+    --enable=rhel-7-server-openstack-12-optools-rpms \
+    --enable=rhel-sap-for-rhel-7-server-eus-rpms \
+    --enable=rhel-sjis-for-rhel-7-server-eus-rpms \
+    --enable=rhel-7-server-rhscon-2-installer-rpms \
+    --enable=rhel-7-server-openstack-6.0-installer-rpms
 	
 yum install -y https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
 yum install -y https://centos7.iuscommunity.org/ius-release.rpm
@@ -60,7 +200,10 @@ curl http://pkg.jenkins-ci.org/redhat/jenkins.repo -o /etc/yum.repos.d/jenkins.r
 rpm --import https://jenkins-ci.org/redhat/jenkins-ci.org.key
 
 rpm --import https://artifacts.elastic.co/GPG-KEY-elasticsearch
+
+wget http://debian.neo4j.org/neotechnology.gpg.key
 rpm --import neotechnology.gpg.key
+
 rpm --import https://download.owncloud.org/download/repositories/production/RHEL_7/repodata/repomd.xml.key
 rpm --import 'https://download.ceph.com/keys/release.asc'
 rpm --import http://yum.opennms.org/OPENNMS-GPG-KEY
@@ -73,7 +216,13 @@ curl -L https://toolbelt.treasuredata.com/sh/install-redhat-td-agent2.sh | sh
 curl -s https://packagecloud.io/install/repositories/grafana/stable/script.rpm.sh | sudo bash
 curl -s https://packagecloud.io/install/repositories/prometheus-rpm/release/script.rpm.sh | sudo bash
 
+curl https://install.citusdata.com/community/rpm.sh | sudo bash
+
 yum -y localinstall https://fedorapeople.org/groups/katello/releases/yum/3.5/katello/el7/x86_64/katello-repos-latest.rpm
+
+yum -y install http://developer.download.nvidia.com/compute/cuda/repos/rhel7/x86_64/cuda-repo-rhel7-9.1.85-1.x86_64.rpm
+
+yum -y install ttps://yum.prod.coreos.systems/repo/tectonic-rhel/7Server/x86_64/Packages/tectonic-release-7-3.el7.noarch.rpm
 
 yum -y install https://packages.microsoft.com/config/rhel/7/packages-microsoft-prod.rpm
 

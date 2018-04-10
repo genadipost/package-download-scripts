@@ -1,0 +1,12 @@
+subscription-manager attach `grep Pool sub-progs.txt | awk '{print --pool=}' | xargs`
+
+subscription-manager repos `grep "Repo ID" repolist.txt | grep -vE "debug|source|beta" | awk '{print "--enable="$3}' | xargs`
+
+yum install -y yum-utils createrepo wget git
+
+yum groupinstall 'Development Tools'
+
+yum upgrade -y
+
+
+
