@@ -197,6 +197,7 @@ nodesource-6.x
 nodesource-7.x
 nodesource-8.x
 nodesource-9.x
+nodesource-10.x
 zabbix
 icinga-stable-release
 sensu

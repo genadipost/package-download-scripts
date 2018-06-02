@@ -551,6 +551,12 @@ baseurl=https://rpm.nodesource.com/pub_9.x/el/7/x86_64/
 enabled=1
 gpgcheck=0' | tee /etc/yum.repos.d/nodesource-9.x.repo
 
+echo '[nodesource-10.x]
+name=Node.js 10.x Packages for Enterprise Linux 7 - $basearch
+baseurl=https://rpm.nodesource.com/pub_10.x/el/7/x86_64/
+enabled=1
+gpgcheck=0' | tee /etc/yum.repos.d/nodesource-10.x.repo
+
 echo '[sensu]
 name=sensu
 baseurl=https://sensu.global.ssl.fastly.net/yum/$releasever/$basearch/
