@@ -229,6 +229,8 @@ yum -y install https://packages.microsoft.com/config/rhel/7/packages-microsoft-p
 curl -o /etc/yum.repos.d/mssql-server-2017-gdr.repo https://packages.microsoft.com/config/rhel/7/mssql-server-2017-gdr.repo
 curl -o /etc/yum.repos.d/mssql-server-2017.repo https://packages.microsoft.com/config/rhel/7/mssql-server-2017.repo
 
+curl https://bintray.com/jfrog/artifactory-rpms/rpm -o /etc/yum.repos.d/bintray-jfrog-artifactory-rpms.repo
+
 echo '[s9s-repo]
 name = Severalnines Release Repository
 baseurl = http://repo.severalnines.com/rpm/os/x86_64

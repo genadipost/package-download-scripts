@@ -243,3 +243,4 @@ packages-microsoft-com-mssql-server-2017
 cuda
 tectonic
 citusdata_community
+bintray--jfrog-artifactory-rpms
