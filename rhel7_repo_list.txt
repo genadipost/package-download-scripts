@@ -182,6 +182,8 @@ foreman-1.15
 foreman-plugins-1.15
 foreman-1.16
 foreman-plugins-1.16
+foreman-1.17
+foreman-plugins-1.17
 sclo-sclo
 sclo-rh
 katello
