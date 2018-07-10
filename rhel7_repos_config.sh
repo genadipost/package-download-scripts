@@ -321,6 +321,12 @@ gpgcheck=1
 enabled=1
 gpgkey=https://www.mongodb.org/static/pgp/server-3.6.asc' | tee /etc/yum.repos.d/mongodb-enterprise.repo
 
+echo '[couchdb]
+name=Couchdb
+baseurl=http://apache.bintray.com/couchdb-rpm/el7/x86_64/
+enabled=1
+gpgcheck=0' | tee /etc/yum.repos.d/couchdb.repo
+
 cat > /etc/yum.repos.d/pmm.repo <<END \
 
 [pmm]
