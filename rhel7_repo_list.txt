@@ -36,7 +36,6 @@ jb-eap-7.1-for-rhel-7-server-rpms
 rhel-7-server-rhceph-1.2-osd-rpms
 rhel-7-server-e4s-satellite-tools-6.3-puppet4-rpms
 rh-sso-textonly-1-for-middleware-rpms
-rhel-7-server-rhv-4-power-rpms
 rhel-sap-hana-for-rhel-7-server-rpms
 rhel-7-server-ansible-2.5-rpms
 rhel-ha-for-rhel-7-server-eus-rpms
@@ -48,7 +47,6 @@ rhel-7-server-rhceph-1.2-calamari-rpms
 rhel-7-server-optional-fastrack-rpms
 rhel-sap-hana-for-rhel-7-server-eus-rpms
 rhel-7-server-rhscon-2-agent-rpms
-rhel-7-server-rhv-4-tools-rpms
 cf-me-5.9-for-rhel-7-rpms
 rhel-7-server-supplementary-rpms
 rhel-7-server-ansible-2.4-rpms
@@ -57,13 +55,10 @@ rhel-7-server-eus-rhn-tools-rpms
 rh-sso-7.2-for-rhel-7-server-rpms
 rhel-7-server-satellite-6.3-puppet4-rpms
 rhel-7-server-rhceph-1.3-installer-rpms
-rhel-7-server-rhv-4.1-rpms
 rhel-7-fast-datapath-rpms
 rhel-7-server-eus-satellite-tools-6.3-rpms
 rhel-7-server-eus-supplementary-rpms
-rhel-7-server-rhv-4-mgmt-agent-rpms
 rh-gluster-3-nfs-for-rhel-7-server-rpms
-rhel-7-server-rhvh-4-build-rpms
 rhel-server-rhscl-7-rpms
 jb-ews-2-for-rhel-7-server-rpms
 rhel-7-server-satellite-tools-6.2-rpms
@@ -118,7 +113,6 @@ rhel-7-server-e4s-satellite-tools-6.3-rpms
 rhel-7-server-ose-3.4-rpms
 rh-gluster-3-nagios-for-rhel-7-server-rpms
 rhel-7-server-eus-satellite-tools-6.3-puppet4-rpms
-rhel-7-server-rhv-4.0-rpms
 rh-gluster-3-samba-for-rhel-7-server-rpms
 rhel-7-server-ose-3.7-rpms
 rhel-7-server-e4s-rpms
