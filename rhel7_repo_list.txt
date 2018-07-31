@@ -135,6 +135,7 @@ rhel-7-server-satellite-capsule-6.3-puppet4-rpms
 rhel-sap-for-rhel-7-server-eus-rpms
 rhel-sjis-for-rhel-7-server-eus-rpms
 rhel-7-server-rhscon-2-installer-rpms
+rhel-7-server-ose-3.10-rpms
 openresty
 epel
 ius

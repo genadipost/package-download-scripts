@@ -162,7 +162,8 @@ subscription-manager repos \
     --enable=rhel-sap-for-rhel-7-server-eus-rpms \
     --enable=rhel-sjis-for-rhel-7-server-eus-rpms \
     --enable=rhel-7-server-rhscon-2-installer-rpms \
-    --enable=rhel-7-server-openstack-6.0-installer-rpms
+    --enable=rhel-7-server-openstack-6.0-installer-rpms \
+    --enable=rhel-7-server-ose-3.10-rpms
 	
 yum install -y https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
 yum install -y https://centos7.iuscommunity.org/ius-release.rpm
