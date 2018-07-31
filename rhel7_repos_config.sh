@@ -815,3 +815,10 @@ baseurl=https://apache.org/dist/ignite/rpm/
 gpgcheck=1
 repo_gpgcheck=1
 gpgkey=https://apache.org/dist/ignite/KEYS' | tee /etc/yum.repos.d/ignite.repo
+
+echo '[apache_aurora]
+name=Apache Aurora
+baseurl=https://apache.bintray.com/aurora/centos-7/
+gpgcheck=1
+repo_gpgcheck=1
+gpgkey=https://apache.org/dist/aurora/KEYS' | tee /etc/yum.repos.d/aurora.repo

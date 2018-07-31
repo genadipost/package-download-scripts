@@ -254,3 +254,4 @@ citusdata_community
 bintray--jfrog-artifactory-rpms
 apache_ignite
 mesosphere
+apache_aurora
