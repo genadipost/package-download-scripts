@@ -212,6 +212,9 @@ gluster-3.11
 gluster-3.12
 gluster-3.13
 gluster-4.0
+tendrl-dependencies
+tendrl-release
+tendrl-tendrl
 gitlab_gitlab-ce
 bareos_bareos-16.2
 bareos_bareos-17.2

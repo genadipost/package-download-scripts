@@ -626,6 +626,39 @@ baseurl=https://buildlogs.centos.org/centos/7/storage/x86_64/gluster-4.0/
 enabled=1
 gpgcheck=0' | tee /etc/yum.repos.d/gluster.repo
 
+echo '[tendrl-dependencies]
+name=Copr repo for dependencies owned by tendrl
+baseurl=https://copr-be.cloud.fedoraproject.org/results/tendrl/dependencies/epel-7-$basearch/
+type=rpm-md
+skip_if_unavailable=True
+gpgcheck=1
+gpgkey=https://copr-be.cloud.fedoraproject.org/results/tendrl/dependencies/pubkey.gpg
+repo_gpgcheck=0
+enabled=1
+enabled_metadata=1' | tee /etc/yum.repos.d/tendrl-dependencies-epel-7.repo
+
+echo '[tendrl-release]
+name=Copr repo for release owned by tendrl
+baseurl=https://copr-be.cloud.fedoraproject.org/results/tendrl/release/epel-7-$basearch/
+type=rpm-md
+skip_if_unavailable=True
+gpgcheck=1
+gpgkey=https://copr-be.cloud.fedoraproject.org/results/tendrl/release/pubkey.gpg
+repo_gpgcheck=0
+enabled=1
+enabled_metadata=1' | tee /etc/yum.repos.d/tendrl-release-epel-7.repo
+
+echo '[tendrl-tendrl]
+name=Copr repo for tendrl owned by tendrl
+baseurl=https://copr-be.cloud.fedoraproject.org/results/tendrl/tendrl/epel-7-$basearch/
+type=rpm-md
+skip_if_unavailable=True
+gpgcheck=1
+gpgkey=https://copr-be.cloud.fedoraproject.org/results/tendrl/tendrl/pubkey.gpg
+repo_gpgcheck=0
+enabled=1
+enabled_metadata=1' | tee /etc/yum.repos.d/tendrl-tendrl-epel-7.repo
+
 echo '[temboard]
 name=temBoard Packages for Enterprise Linux 7
 baseurl=https://packages.temboard.io/yum/rhel7/
