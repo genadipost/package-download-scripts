@@ -806,3 +806,10 @@ baseurl=http://download.bareos.org/bareos/contrib/RHEL_7/
 gpgcheck=1
 gpgkey=http://download.bareos.org/bareos/contrib/RHEL_7//repodata/repomd.xml.key
 enabled=1' | tee /etc/yum.repos.d/bareos:contrib.repo
+
+echo '[apache_ignite]
+name=Apache Ignite
+baseurl=https://apache.org/dist/ignite/rpm/
+gpgcheck=1
+repo_gpgcheck=1
+gpgkey=https://apache.org/dist/ignite/KEYS' | tee /etc/yum.repos.d/ignite.repo

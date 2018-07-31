@@ -252,3 +252,4 @@ cuda
 tectonic
 citusdata_community
 bintray--jfrog-artifactory-rpms
+apache_ignite
