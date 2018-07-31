@@ -257,3 +257,4 @@ mesosphere
 apache_aurora
 salt-latest
 salt-py3-latest
+passenger

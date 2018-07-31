@@ -236,6 +236,8 @@ curl https://bintray.com/jfrog/artifactory-rpms/rpm -o /etc/yum.repos.d/bintray-
 
 curl https://download.arangodb.com/arangodb33/CentOS_7/arangodb.repo -o /etc/yum.repos.d/arangodb.repo
 
+curl --fail -sSLo /etc/yum.repos.d/passenger.repo https://oss-binaries.phusionpassenger.com/yum/definitions/el-passenger.repo
+
 echo '[s9s-repo]
 name = Severalnines Release Repository
 baseurl = http://repo.severalnines.com/rpm/os/x86_64
