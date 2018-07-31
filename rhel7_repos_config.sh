@@ -481,6 +481,27 @@ gpgcheck=0
 
 END
 
+cat > /etc/yum.repos.d/foreman-1.18.repo <<END \
+
+[foreman-1.18]
+name=Foreman 1.18
+baseurl=http://yum.theforeman.org/releases/1.18/el7/\$basearch
+enabled=1
+gpgcheck=0
+
+END
+
+cat > /etc/yum.repos.d/foreman-plugins-1.18.repo <<END \
+
+[foreman-plugins-1.18]
+name=Foreman plugins 1.18
+baseurl=http://yum.theforeman.org/plugins/1.18/el7/\$basearch
+enabled=1
+gpgcheck=0
+
+END
+
+
 
 cat > /etc/yum.repos.d/sclo.repo <<END \
 
