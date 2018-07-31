@@ -58,7 +58,6 @@ subscription-manager repos \
     --enable=rhel-7-server-dotnet-rpms \
     --enable=rhel-7-server-rhceph-1.2-calamari-rpms \
     --enable=rhel-7-server-optional-fastrack-rpms \
-    --enable=rhel-7-server-rhevh-rpms \
     --enable=rhel-sap-hana-for-rhel-7-server-eus-rpms \
     --enable=rhel-7-server-rhscon-2-agent-rpms \
     --enable=rhel-7-server-openstack-7.0-tools-rpms \
@@ -105,7 +104,6 @@ subscription-manager repos \
     --enable=rhel-7-server-ose-3.2-rpms \
     --enable=rhel-7-server-openstack-11-rpms \
     --enable=cf-me-5.6-for-rhel-7-rpms \
-    --enable=rhel-7-server-rhev-mgmt-agent-rpms \
     --enable=rhel-7-server-v2vwin-1-rpms \
     --enable=rhel-7-server-ose-3.1-rpms \
     --enable=rhel-7-server-eus-optional-rpms \

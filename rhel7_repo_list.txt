@@ -46,7 +46,6 @@ rhel-7-server-thirdparty-oracle-java-rpms
 rhel-7-server-dotnet-rpms
 rhel-7-server-rhceph-1.2-calamari-rpms
 rhel-7-server-optional-fastrack-rpms
-rhel-7-server-rhevh-rpms
 rhel-sap-hana-for-rhel-7-server-eus-rpms
 rhel-7-server-rhscon-2-agent-rpms
 rhel-7-server-rhv-4-tools-rpms
@@ -86,7 +85,6 @@ rhel-7-server-rhceph-1.2-installer-rpms
 rhel-atomic-host-rpms
 rhel-7-server-ose-3.2-rpms
 cf-me-5.6-for-rhel-7-rpms
-rhel-7-server-rhev-mgmt-agent-rpms
 rhel-7-server-v2vwin-1-rpms
 rhel-7-server-ose-3.1-rpms
 rhel-7-server-eus-optional-rpms
