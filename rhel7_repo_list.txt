@@ -137,6 +137,7 @@ rhel-sjis-for-rhel-7-server-eus-rpms
 rhel-7-server-rhscon-2-installer-rpms
 rhel-7-server-ose-3.10-rpms
 rhel-7-server-ansible-2.6-rpms
+rh-sso-7.2-for-rhel-7-server-rpms
 openresty
 epel
 ius
