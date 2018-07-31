@@ -174,6 +174,7 @@ elasticsearch-5.x
 elasticsearch-6.x
 neo4j
 basho_riak
+arangodb
 rundeck-release-bintray
 puppetlabs-pc1
 puppet5

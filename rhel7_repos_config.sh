@@ -231,6 +231,8 @@ curl -o /etc/yum.repos.d/mssql-server-2017.repo https://packages.microsoft.com/c
 
 curl https://bintray.com/jfrog/artifactory-rpms/rpm -o /etc/yum.repos.d/bintray-jfrog-artifactory-rpms.repo
 
+curl https://download.arangodb.com/arangodb33/CentOS_7/arangodb.repo -o /etc/yum.repos.d/arangodb.repo
+
 echo '[s9s-repo]
 name = Severalnines Release Repository
 baseurl = http://repo.severalnines.com/rpm/os/x86_64
