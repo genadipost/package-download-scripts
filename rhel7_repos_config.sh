@@ -231,8 +231,6 @@ curl https://bintray.com/jfrog/artifactory-rpms/rpm -o /etc/yum.repos.d/bintray-
 
 curl https://download.arangodb.com/arangodb33/CentOS_7/arangodb.repo -o /etc/yum.repos.d/arangodb.repo
 
-curl --fail -sSLo /etc/yum.repos.d/passenger.repo https://oss-binaries.phusionpassenger.com/yum/definitions/el-passenger.repo
-
 echo '[s9s-repo]
 name = Severalnines Release Repository
 baseurl = http://repo.severalnines.com/rpm/os/x86_64
@@ -833,3 +831,20 @@ baseurl=https://apache.bintray.com/aurora/centos-7/
 gpgcheck=1
 repo_gpgcheck=1
 gpgkey=https://apache.org/dist/aurora/KEYS' | tee /etc/yum.repos.d/aurora.repo
+
+echo '[seveas-python-hpilo]
+name=Copr repo for python-hpilo owned by seveas
+baseurl=https://copr-be.cloud.fedoraproject.org/results/seveas/python-hpilo/epel-7-$basearch/
+type=rpm-md
+skip_if_unavailable=True
+gpgcheck=1
+gpgkey=https://copr-be.cloud.fedoraproject.org/results/seveas/python-hpilo/pubkey.gpg
+repo_gpgcheck=0
+enabled=1
+enabled_metadata=1' | tee /etc/yum.repo.d/seveas-python-hpilo-epel-7.repo
+
+echo '[passenger]
+name=passenger
+baseurl=https://oss-binaries.phusionpassenger.com/yum/passenger/el/$releasever/$basearch
+gpgcheck=0
+enabled=1' | tee /etc/yum.repos.d/passenger.repo
