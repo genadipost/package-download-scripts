@@ -208,6 +208,8 @@ rpm --import https://download.owncloud.org/download/repositories/production/RHEL
 rpm --import 'https://download.ceph.com/keys/release.asc'
 rpm --import http://yum.opennms.org/OPENNMS-GPG-KEY
 
+rpm -Uvh http://repos.mesosphere.io/el/7/noarch/RPMS/mesosphere-el-repo-7-3.noarch.rpm  
+
 curl -s https://packagecloud.io/install/repositories/basho/riak/script.rpm.sh | sudo bash
 curl -sS https://packages.gitlab.com/install/repositories/gitlab/gitlab-ce/script.rpm.sh | sudo bash
 curl -s https://packagecloud.io/install/repositories/varnishcache/varnish41/script.rpm.sh | sudo bash
