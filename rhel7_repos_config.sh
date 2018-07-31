@@ -207,8 +207,9 @@ rpm --import neotechnology.gpg.key
 rpm --import https://download.owncloud.org/download/repositories/production/RHEL_7/repodata/repomd.xml.key
 rpm --import 'https://download.ceph.com/keys/release.asc'
 rpm --import http://yum.opennms.org/OPENNMS-GPG-KEY
-
-rpm -Uvh http://repos.mesosphere.io/el/7/noarch/RPMS/mesosphere-el-repo-7-3.noarch.rpm  
+rpm -Uvh http://repos.mesosphere.io/el/7/noarch/RPMS/mesosphere-el-repo-7-3.noarch.rpm
+yum install https://repo.saltstack.com/yum/redhat/salt-repo-latest-2.el7.noarch.rpm 
+yum install https://repo.saltstack.com/py3/redhat/salt-py3-repo-latest-2.el7.noarch.rpm 
 
 curl -s https://packagecloud.io/install/repositories/basho/riak/script.rpm.sh | sudo bash
 curl -sS https://packages.gitlab.com/install/repositories/gitlab/gitlab-ce/script.rpm.sh | sudo bash

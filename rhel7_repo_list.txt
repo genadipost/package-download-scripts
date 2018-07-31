@@ -255,3 +255,5 @@ bintray--jfrog-artifactory-rpms
 apache_ignite
 mesosphere
 apache_aurora
+salt-latest
+salt-py3-latest
